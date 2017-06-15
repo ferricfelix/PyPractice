@@ -1,0 +1,26 @@
+Tuples are immutable and memory efficient
+
+list = [x,y]
+dict = {x:y,y:x}
+string = "" or ''
+tuple = (x,y) #has to include a comma, otherwise just a single bit
+tuple = tuple([1,2,3]) #another way
+
+> a = 5
+> b = 20
+> a, b = b, a
+> a = 20
+> b = 5 # tuple unpacking
+
+def add(base, *args):
+	total = base
+	for num in args:
+		total += num
+	return total
+
+> add(5, 20)
+25
+	
+#always in this order
+def add(*args, **kwargs)
+ 

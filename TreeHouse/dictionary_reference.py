@@ -48,3 +48,10 @@ player2
 Gene
 Nina
 Nina
+
+>>> for item in dictionary.items():
+...     print(item)
+... 
+('player1', 'Gene')
+('name', 'Nina')
+('player2', 'Nina')
