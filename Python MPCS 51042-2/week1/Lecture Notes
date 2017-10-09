@@ -1,0 +1,22 @@
+ptpython - a little lightweight command line IDE
+Jupyter Notebook
+
+Interpreted vs Compiled Language
+* Compiled 
+** Check the code to make sure it's valid
+** Take instructions in one language, and make them into another language
+* Interpreted
+
+code > Python > interpreter (.pyc) > bytecode (pretty close to the original code but executable by the machine) > interpreter reads the .pyc and executes it
+
+Python Implementations:
+PyPy (implemented in RPython)
+CPython ===> is what you should use!
+Jython (interpreted in Java)
+
+PEP = Python Enhancement Proposal = formalized way to propose a change in Python
+Ultimate approval must come from Python Benevolent Dictator for Life: Guido van Rossum
+
+REPL = read evaluate print loop
+
+Automatic memory management and garbage collection in Python

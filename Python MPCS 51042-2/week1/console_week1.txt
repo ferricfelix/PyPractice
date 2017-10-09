@@ -1,0 +1,696 @@
+>>> x = 3
+>>> x = 'asdf'
+>>> x = print('Hi')
+Hi
+>>> x
+>>> if 3 < 4:
+...    print(3)
+...    print(2)
+3
+2
+>>> 2 ** 10
+1024
+>>> 2 ** 100000000
+KeyboardInterrupt
+
+>>> 2 ** 10000
+19950631168807583848837421626835850838234968318861924548520089498529438830221946631919961684036194597899331129423209124271556491349413781117593785932096323957855730046793794526765246551266059895520550086918193311542508608460618104685509074866089624888090489894838009253941633257850621568309473902556912388065225096643874441046759871626985453222868538161694315775629640762836880760732228535091641476183956381458969463899410840960536267821064621427333394036525565649530603142680234969400335934316651459297773279665775606172582031407994198179607378245683762280037302885487251900834464581454650557929601414833921615734588139257095379769119277800826957735674444123062018757836325502728323789270710373802866393031428133241401624195671690574061419654342324638801248856147305207431992259611796250130992860241708340807605932320161268492288496255841312844061536738951487114256315111089745514203313820202931640957596464756010405845841566072044962867016515061920631004186422275908670900574606417856951911456055068251250406007519842261898059237118054444788072906395242548339221982707404473162376760846613033778706039803413197133493654622700563169937455508241780972810983291314403571877524768509857276937926433221599399876886660808368837838027643282775172273657572744784112294389733810861607423253291974813120197604178281965697475898164531258434135959862784130128185406283476649088690521047580882615823961985770122407044330583075869039319604603404973156583208672105913300903752823415539745394397715257455290510212310947321610753474825740775273986348298498340756937955646638621874569499279016572103701364433135817214311791398222983845847334440270964182851005072927748364550578634501100852987812389473928699540834346158807043959118985815145779177143619698728131459483783202081474982171858011389071228250905826817436220577475921417653715687725614904582904992461028630081535583308130101987675856234343538955409175623400844887526162643568648833519463720377293240094456246923254350400678027273837755376406726898636241037491410966718557050759098100246789880178271925953381282421954028302759408448955014676668389697996886241636313376393903373455801407636741877711055384225739499110186468219696581651485130494222369947714763069155468217682876200362777257723781365331611196811280792669481887201298643660768551639860534602297871557517947385246369446923087894265948217008051120322365496288169035739121368338393591756418733850510970271613915439590991598154654417336311656936031122249937969999226781732358023111862644575299135758175008199839236284615249881088960232244362173771618086357015468484058622329792853875623486556440536962622018963571028812361567512543338303270029097668650568557157505516727518899194129711337690149916181315171544007728650573189557450920330185304847113818315407324053319038462084036421763703911550639789000742853672196280903477974533320468368795868580237952218629120080742819551317948157624448298518461509704888027274721574688131594750409732115080498190455803416826949787141316063210686391511681774304792596709376
+>>> 1 + 3
+4
+>>> 1 - 3
+-2
+>>> 1 / 3
+0.3333333333333333
+>>>                                                                                                                   
+(py36) xenon:~/mpcs-python/week1/class (master)$ python2
+Python 2.7.13 (default, Jan 19 2017, 14:48:08) 
+[GCC 6.3.0 20170118] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1 / 3
+0
+>>> 
+(py36) xenon:~/mpcs-python/week1/class (master)$ 
+(py36) xenon:~/mpcs-python/week1/class (master)$ ptpython
+>>> 1 // 3
+0
+>>> 10 % 3
+1
+>>> 2 ** 8
+256
+>>> 10 ** 10
+10000000000
+>>> 1.5
+1.5
+>>> 1.5 + 4.0
+5.5
+>>> 1.5 / 4.0
+0.375
+>>> 2.0e10
+20000000000.0
+>>> abs(-5)
+5
+>>> import math
+>>> math.sqrt(5)
+2.23606797749979
+>>> math.log(3)
+1.0986122886681098
+>>> math.exp(1)
+2.718281828459045
+>>> math.pi
+3.141592653589793
+>>> 3 + 4.0
+7.0
+>>> 3.0 + 4.0j
+(3+4j)
+>>> x = 3.0 + 4.0j
+>>> x + 3
+(6+4j)
+>>> a = "4.5"
+>>> a + 3.0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: must be str, not float
+must be str, not float
+>>> float(a)
+4.5
+>>> x = float(a)
+>>> x + 3.0
+7.5
+>>> int('4')
+4
+>>> x = 91_829_427_398_210_491_247
+>>> x
+91829427398210491247
+>>> 100_000
+100000
+>>> 1_00000
+100000
+>>> x = True
+>>> x = true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined
+name 'true' is not defined
+>>> 3 == 4
+False
+>>> 3 == 3
+True
+>>> 3 != 4
+True
+>>> 3 < 4 and 4 < 5
+True
+>>> 3 < 4 and 5 < 4
+False
+>>> not 3 < 4
+False
+>>> 3 < 4 or 5 < 4
+True
+>>> x = 10
+>>> 3 < x < 12
+True
+>>> 3 < x < 12 < 20 < 100
+True
+>>> 3 < x and x < 12 and 12 < 20 and 20 < 100
+True
+>>> y = True
+>>> x = 10 if y else 20
+>>> x
+10
+>>> x = 10 if not y else 20
+>>> x
+20
+>>> True + 10
+11
+>>> False / True
+0.0
+>>> True / False
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+division by zero
+>>> x = 'word'
+>>> x = "Word"
+>>> x = """This
+... is a 
+... sentence.
+... """
+>>> x
+'This\nis a \nsentence.\n'
+>>> print(x)
+This
+is a 
+sentence.
+
+>>> x =  'This\r\nis a \r\nsentence.\r\n'
+>>> print(x)
+This
+is a 
+sentence.
+
+>>> x.upper()
+'THIS\r\nIS A \r\nSENTENCE.\r\n'
+>>> y = x.upper()
+>>> y
+'THIS\r\nIS A \r\nSENTENCE.\r\n'
+>>> y.lower()
+'this\r\nis a \r\nsentence.\r\n'
+>>> x.capitalize()
+'This\r\nis a \r\nsentence.\r\n'
+>>> 'this is a sentence'.capitalize()
+'This is a sentence'
+>>> 'this is a sentence. another sentence'.capitalize()
+'This is a sentence. another sentence'
+>>> x
+'This\r\nis a \r\nsentence.\r\n'
+>>> x.find('is')
+2
+>>> x[0]
+'T'
+>>> x[1]
+'h'
+>>> x[2]
+'i'
+>>> len(x)
+24
+>>> 'x ' + 'y'
+'x y'
+>>> 'hi'*10
+'hihihihihihihihihihi'
+>>> str(3.14e10)
+'31400000000.0'
+>>> 3.14e10
+31400000000.0
+>>> 
+>>> 'f' in 'abcdefgh'
+True
+>>> 'def' in 'abcdef'
+True
+>>> x = 'abcdef'
+>>> x[0]
+'a'
+>>> x[0:2]
+'ab'
+>>> x[-1]
+'f'
+>>> x[-2]
+'e'
+>>> x[:2]
+'ab'
+>>> x[2:]
+'cdef'
+>>> x[-3:]
+'def'
+>>> x.startswith('ab')
+True
+>>> x.endswith('z')
+False
+>>> x.endswith('f')
+True
+>>> x = [0, 1, 2, 3]
+>>> x
+[0, 1, 2, 3]
+>>> x[1]
+1
+>>> x = [5, 6, 7, 8]
+>>> x[1]
+6
+>>> x[1:]
+[6, 7, 8]
+>>> x = [10, 3.0e-3, True, 'abc', [-1, -2]]
+>>> x[-1]
+[-1, -2]
+>>> x[-1][0]
+-1
+>>> x
+[10, 0.003, True, 'abc', [-1, -2]]
+>>> x.append(3)
+>>> x
+[10, 0.003, True, 'abc', [-1, -2], 3]
+>>> x.insert(0, 'string')
+>>> x
+['string', 10, 0.003, True, 'abc', [-1, -2], 3]
+>>> x.reverse()
+>>> x
+[3, [-1, -2], 'abc', True, 0.003, 10, 'string']
+>>> x.pop()
+'string'
+>>> x
+[3, [-1, -2], 'abc', True, 0.003, 10]
+>>> y = x.pop(2)
+>>> y
+'abc'
+>>> x
+[3, [-1, -2], True, 0.003, 10]
+>>> x.sort()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '<' not supported between instances of 'list' and 'int'
+'<' not supported between instances of 'list' and 'int'
+>>> x = [10, 0, -4, 5, 100, 2]
+>>> x.sort()
+>>> x
+[-4, 0, 2, 5, 10, 100]
+>>> s = 'abcdef'
+>>> list(s)
+['a', 'b', 'c', 'd', 'e', 'f']
+>>> len(x)
+6
+>>> x[-3]
+5
+>>> x[-3:]
+[5, 10, 100]
+>>> x = (1, 2, 3)
+>>> y = list(x)
+>>> y
+[1, 2, 3]
+>>> tuple(y)
+(1, 2, 3)
+>>> a = {10, 20, 30}
+>>> a
+{10, 20, 30}
+>>> set(y)
+{1, 2, 3}
+>>> x = [5, 5, 5, 5, 5]
+>>> x[0]
+5
+>>> x[1]
+5
+>>> x = {5, 5, 5, 5, 5}
+>>> x
+{5}
+>>> y
+[1, 2, 3]
+>>> y[0]
+1
+>>> x
+{5}
+>>> x[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object does not support indexing
+'set' object does not support indexing
+>>> x
+{5}
+>>> x.add(10)
+>>> x
+{10, 5}
+>>> y = {5, 12}
+>>> names = ['Paul', 'John', 'Mary', 'Mary']
+>>> set(names)
+{'Paul', 'Mary', 'John'}
+>>> y = _
+>>> list(y)
+['Paul', 'Mary', 'John']
+>>> y[1]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object does not support indexing
+'set' object does not support indexing
+>>> z = list(y)
+>>> z
+['Paul', 'Mary', 'John']
+>>> z[1]
+'Mary'
+>>> x = {5, 10}
+>>> y = {10, 12}
+>>> x.intersection(y)
+{10}
+>>> y.difference(x)
+{12}
+>>> x.union(y)
+{10, 12, 5}
+>>> a = [10, 20, 30]
+>>> b = [20, 30, 40]
+>>> set(a).intersection(set(b))
+{20, 30}
+>>> a_set = set(a)
+>>> b_set = set(b)
+>>> a_set.intersection(b_set)
+{20, 30}
+>>> x
+{10, 5}
+>>> y
+{10, 12}
+>>> x & y
+{10}
+>>> x - y
+{5}
+>>> x | y
+{10, 12, 5}
+>>> x and y
+{10, 12}
+>>> x
+{10, 5}
+>>> 5 in x
+True
+>>> 12 in x
+False
+>>> len(x)
+2
+>>> person = [('eyecolor', 'blue'), ('age', 25), ('height', 180)]
+>>> person = {'eyecolor': 'blue', 'age': 25, 'height': 180}
+>>> person['age']
+25
+>>> person['age'] = 30
+>>> person
+{'eyecolor': 'blue', 'age': 30, 'height': 180}
+>>> person['height'] = (5, 11)
+>>> person
+{'eyecolor': 'blue', 'age': 30, 'height': (5, 11)}
+>>> person['height'] = [5, 11]
+>>> person['height'].append(4)
+>>> person
+{'eyecolor': 'blue', 'age': 30, 'height': [5, 11, 4]}
+>>> del person['height']
+>>> person
+{'eyecolor': 'blue', 'age': 30}
+>>> 'blue' in person
+False
+>>> 'age' in person
+True
+>>> person
+{'eyecolor': 'blue', 'age': 30}
+>>> person['eyecolor'] = 'green'
+>>> person
+{'eyecolor': 'green', 'age': 30}
+>>> x = {4: 'x', 'x': 4, 3.0e10: 100}
+>>> x
+{4: 'x', 'x': 4, 30000000000.0: 100}
+>>> x[(2,3)] = 't'
+>>> x
+{4: 'x', 'x': 4, 30000000000.0: 100, (2, 3): 't'}
+>>> y = [1,2]
+>>> x[y] = 0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unhashable type: 'list'
+unhashable type: 'list'
+>>> x = 10
+>>> if x < 5:
+...     print('less than 5')
+... elif x < 10:
+...     print('less than 10')
+... else:
+...     print('greater than or equal to 10')
+greater than or equal to 10
+>>> x = 4
+>>> if x < 5:
+...     print('less than 5')
+... elif x < 10:
+...     print('less than 10')
+... else:
+...     print('greater than or equal to 10')
+...     
+less than 5
+>>> x = {2: 3, 5: 6}
+>>> if x:
+...     print('something')
+something
+>>> if bool(x):                                                                                                       
+...                                                                                                                   
+>>> bool(0.0)
+False
+>>> bool(1.0)
+True
+>>> bool(10.0)
+True
+>>> bool('')
+False
+>>> bool('x')
+True
+>>> x
+{2: 3, 5: 6}
+>>> bool(-10)
+True
+>>> int(False)
+0
+>>> x = None
+>>> bool(None)
+False
+>>> y = 10
+>>> i = 0
+>>> while i < y:
+...     print(i)
+...     i = i + 1
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+>>> i
+10
+>>> i = i + 1
+>>> i += 1
+>>> i += 10
+>>> u
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'u' is not defined
+name 'u' is not defined
+>>> i
+22
+>>> i -= 10
+>>> i
+12
+>>> i *= 3
+>>> x = [0, 1, 10, 20, 100]
+>>> for y in x:
+...     print(y)
+0
+1
+10
+20
+100
+>>> print('hi', end='')
+>>> 
+>>> for y in x:
+...     print(y, end='')
+>>> 
+>>> x
+[0, 1, 10, 20, 100]
+>>> for y in x:
+...     print(y, end='')
+... print('')
+011020100
+>>> x = 'abcdef'
+>>> for y in x:
+...     print(y)
+a
+b
+c
+d
+e
+f
+>>> for y in {3, 10, 5}:
+...     print(y)
+10
+3
+5
+>>> for x in {'eyecolor': 'blue', 'age': 25, 'height': 180}:
+...     print(x)
+eyecolor
+age
+height
+>>> z = {'eyecolor': 'blue', 'age': 25, 'height': 180}
+>>> for key in z:
+...     print(key, z[key])
+eyecolor blue
+age 25
+height 180
+>>> for x in z.values():
+...     print(x)
+blue
+25
+180
+>>> for x in z.keys():
+...     print(x)
+eyecolor
+age
+height
+>>> for x in z.items():
+...     print(x)
+('eyecolor', 'blue')
+('age', 25)
+('height', 180)
+>>> y
+5
+>>> y = [10, 20, 30, 40]
+>>> for x in y[1:]:
+...     print(x)
+20
+30
+40
+>>> for x in reversed(y):
+...     print(x)
+40
+30
+20
+10
+>>> y = [20, 30, 10, 40]
+>>> for x in y:
+...     print(x)
+20
+30
+10
+40
+>>> for x in sorted(y):
+...     print(x)
+10
+20
+30
+40
+>>> for x in range(0, 10):
+...     print(x)
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+>>> for x in range(10):
+...     print(x)
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+>>> x, y = (1, 2)
+>>> x, y, z = [1, 2, 3]
+>>> x
+1
+>>> y
+2
+>>> z
+3
+>>> x, y = {4: 5, 'a': 2}
+>>> x
+4
+>>> y
+'a'
+>>> x = range(10)
+>>> x
+range(0, 10)
+>>> x = range(4)
+>>> y = 'abcd'
+>>> for z in zip(x, y):
+...     print(z)
+(0, 'a')
+(1, 'b')
+(2, 'c')
+(3, 'd')
+>>> for xi, yi in zip(x, y):
+...     print(xi, yi)
+0 a
+1 b
+2 c
+3 d
+>>> y
+'abcd'
+>>> for x in enumerate(y):
+...     print(x)
+(0, 'a')
+(1, 'b')
+(2, 'c')
+(3, 'd')
+>>> for i, x in enumerate(y):
+...     print(i, x)
+0 a
+1 b
+2 c
+3 d
+>>>                                                                                                                   
+(py36) xenon:~/mpcs-python/week1/class (master)$ ls
+helloworld.py  Untitled.ipynb
+(py36) xenon:~/mpcs-python/week1/class (master)$ cat Untitled.ipynb 
+{
+ "cells": [],
+ "metadata": {},
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
+(py36) xenon:~/mpcs-python/week1/class (master)$ ptpython
+>>> f = open('Untitled.ipynb', 'r')
+>>> f.readline()
+'{\n'
+>>> f.readline()
+' "cells": [],\n'
+>>> f.readline()
+' "metadata": {},\n'
+>>> f = open('Untitled.ipynb', 'r')
+>>> f.read()
+'{\n "cells": [],\n "metadata": {},\n "nbformat": 4,\n "nbformat_minor": 2\n}\n'
+>>> f.close()
+>>> f = open('Untitled.ipynb', 'r')
+>>> for line in f:
+...     print(line)
+{
+
+ "cells": [],
+
+ "metadata": {},
+
+ "nbformat": 4,
+
+ "nbformat_minor": 2
+
+}
+
+>>> for line in f:
+...     print(line, end='')
+>>> f = open('Untitled.ipynb', 'r')
+>>> for line in f:
+...     print(line, end='')
+{
+ "cells": [],
+ "metadata": {},
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
+>>> f = open('Untitled.ipynb', 'r')
+>>> for line in f:
+...     if 'nb' in line:
+...         print(line, end='')
+ "nbformat": 4,
+ "nbformat_minor": 2
+>>> f.seek(0)
+0
+>>> f.readline()
+'{\n'
+>>> f.readline()
+' "cells": [],\n'
+>>> x = [1, 2, 3]
+>>> y = x
+>>> del x
+>>> y
+[1, 2, 3]
+>>> x
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'x' is not defined
+name 'x' is not defined
+>>> x = [1, 2, 3]
+>>> y = x
+>>> z = [1, 2, 3]
+>>> x == y
+True
+>>> x == z
+True
+>>> x is y
+True
+>>> x is z
+False
+>>>   
