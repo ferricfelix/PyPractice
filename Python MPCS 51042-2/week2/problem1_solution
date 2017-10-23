@@ -1,0 +1,9 @@
+problem1
+
+input = []
+for i in range[n]:
+	input.append('---'*n + '-')
+	input.append
+input.append
+print('\n'.join(input))
+

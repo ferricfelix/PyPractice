@@ -3,7 +3,9 @@ from itertools import permutations
 for s, l, a, y, e, r in permutations('0123456789', 6):
     # Determine string representation of SLAYER and LAYERS
     slayer = f'{s}{l}{a}{y}{e}{r}'
+    print(slayer)
     layers = f'{l}{a}{y}{e}{r}{s}'
+    print(layers)
 
     # Actual result of SLAYER + SLAYER + SLAYER
     result = 3*int(slayer)
